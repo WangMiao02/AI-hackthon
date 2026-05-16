@@ -11,8 +11,8 @@ node_modules/
 .env.*
 
 # openclaw local runtime data
-openclaw_runtime_full_snapshot/
-openclaw.runtime.snapshot.json
+# openclaw_runtime_full_snapshot/
+# openclaw.runtime.snapshot.json
 
 # temporary downloads/installers
 *.zip
