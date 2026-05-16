@@ -1,0 +1,20 @@
+# dependencies
+node_modules/
+**/node_modules/
+.pnpm-store/
+
+# logs
+*.log
+
+# environment
+.env
+.env.*
+
+# openclaw local runtime data
+openclaw_runtime_full_snapshot/
+openclaw.runtime.snapshot.json
+
+# temporary downloads/installers
+*.zip
+*.msi
+*.exe
