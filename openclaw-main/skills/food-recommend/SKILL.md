@@ -11,8 +11,10 @@ compatibility:
     - 用户历史订单接口（需用户授权）
     - 用户历史搜索词接口（需用户授权）
     - GPS定位接口（需用户授权，降级方案：常用地址）
-  downstream_skill: skill_order   # 用户点击「确认下单」后触发
-  scope: 美团外卖平台，5km范围内餐厅，不含堂食预订
+  downstream_skills:
+    - skill_order        # 用户点击「确认下单外卖」后触发
+    - skill_queue_number # 用户选择餐厅后检测到堂食意图时触发
+  scope: 美团外卖平台，5km范围内餐厅
 ---
 
 # food_recommend — 外卖推荐
