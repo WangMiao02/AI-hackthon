@@ -1,0 +1,205 @@
+{
+  "api_endpoint": "GET /api/bills?user_id=demo_user",
+  "description": "生活缴费聚合接口 Mock 数据，模拟多品类账单状态查询返回结果",
+  "query_time": "2026-05-28T09:00:00+08:00",
+  "user_bills": [
+    {
+      "bill_id": "BILL001",
+      "type": "electricity",
+      "type_label": "电费",
+      "provider": "国家电网",
+      "account_id": "1301234567890",
+      "account_label": "户号 130****890（望京家）",
+      "billing_cycle": "2026年5月",
+      "amount": 287.60,
+      "due_date": "2026-05-30",
+      "status": "due_soon",
+      "status_label": "即将到期",
+      "auto_pay": false,
+      "history": [
+        {"month": "2026-02", "amount": 156.30},
+        {"month": "2026-03", "amount": 178.40},
+        {"month": "2026-04", "amount": 203.20}
+      ],
+      "avg_3month": 179.30,
+      "anomaly": true,
+      "anomaly_reason": "较近3月均值高出60%，可能因入夏空调使用增加"
+    },
+    {
+      "bill_id": "BILL002",
+      "type": "water",
+      "type_label": "水费",
+      "provider": "北京市自来水集团",
+      "account_id": "WTR2026050088",
+      "account_label": "户号 WTR****088（望京家）",
+      "billing_cycle": "2026年4-5月",
+      "amount": 65.80,
+      "due_date": "2026-06-05",
+      "status": "upcoming",
+      "status_label": "未到期",
+      "auto_pay": false,
+      "history": [
+        {"month": "2025-12~2026-01", "amount": 58.20},
+        {"month": "2026-02~03", "amount": 62.10},
+        {"month": "2026-03~04", "amount": 60.50}
+      ],
+      "avg_3month": 60.27,
+      "anomaly": false,
+      "anomaly_reason": null
+    },
+    {
+      "bill_id": "BILL003",
+      "type": "gas",
+      "type_label": "燃气费",
+      "provider": "北京燃气集团",
+      "account_id": "GAS8866001234",
+      "account_label": "户号 GAS****234（望京家）",
+      "billing_cycle": "2026年5月",
+      "amount": 42.00,
+      "due_date": "2026-06-10",
+      "status": "upcoming",
+      "status_label": "未到期",
+      "auto_pay": true,
+      "auto_pay_method": "工商银行储蓄卡 **** 6789",
+      "history": [
+        {"month": "2026-02", "amount": 68.50},
+        {"month": "2026-03", "amount": 55.00},
+        {"month": "2026-04", "amount": 48.30}
+      ],
+      "avg_3month": 57.27,
+      "anomaly": false,
+      "anomaly_reason": null
+    },
+    {
+      "bill_id": "BILL004",
+      "type": "mobile",
+      "type_label": "手机话费",
+      "provider": "中国移动",
+      "account_id": "138****6789",
+      "account_label": "138****6789",
+      "billing_cycle": "2026年5月",
+      "amount": 128.00,
+      "due_date": "2026-05-28",
+      "status": "due_today",
+      "status_label": "今日到期",
+      "auto_pay": false,
+      "history": [
+        {"month": "2026-02", "amount": 128.00},
+        {"month": "2026-03", "amount": 128.00},
+        {"month": "2026-04", "amount": 128.00}
+      ],
+      "avg_3month": 128.00,
+      "anomaly": false,
+      "anomaly_reason": null,
+      "note": "套餐固定费用 128元/月"
+    },
+    {
+      "bill_id": "BILL005",
+      "type": "property_fee",
+      "type_label": "物业费",
+      "provider": "望京花园物业",
+      "account_id": "PROP-A3-1201",
+      "account_label": "A3栋1201室",
+      "billing_cycle": "2026年Q2（4-6月）",
+      "amount": 1860.00,
+      "due_date": "2026-06-01",
+      "status": "due_soon",
+      "status_label": "即将到期",
+      "auto_pay": false,
+      "history": [
+        {"month": "2025-Q3", "amount": 1860.00},
+        {"month": "2025-Q4", "amount": 1860.00},
+        {"month": "2026-Q1", "amount": 1860.00}
+      ],
+      "avg_3month": 1860.00,
+      "anomaly": false,
+      "anomaly_reason": null,
+      "note": "每季度缴纳，620元/月"
+    },
+    {
+      "bill_id": "BILL006",
+      "type": "parking",
+      "type_label": "停车费",
+      "provider": "望京花园地下车库",
+      "account_id": "PARK-B2-088",
+      "account_label": "B2层088号车位",
+      "billing_cycle": "2026年6月",
+      "amount": 800.00,
+      "due_date": "2026-06-01",
+      "status": "due_soon",
+      "status_label": "即将到期",
+      "auto_pay": false,
+      "history": [
+        {"month": "2026-03", "amount": 800.00},
+        {"month": "2026-04", "amount": 800.00},
+        {"month": "2026-05", "amount": 800.00}
+      ],
+      "avg_3month": 800.00,
+      "anomaly": false,
+      "anomaly_reason": null,
+      "note": "月租车位固定费用"
+    },
+    {
+      "bill_id": "BILL007",
+      "type": "credit_card",
+      "type_label": "信用卡还款",
+      "provider": "招商银行",
+      "account_id": "招行信用卡 **** 3456",
+      "account_label": "招行信用卡 **** 3456",
+      "billing_cycle": "2026年5月账单",
+      "amount": 12680.50,
+      "minimum_payment": 1268.05,
+      "due_date": "2026-06-05",
+      "status": "due_soon",
+      "status_label": "即将到期",
+      "auto_pay": false,
+      "history": [
+        {"month": "2026-02", "amount": 8920.00},
+        {"month": "2026-03", "amount": 11350.00},
+        {"month": "2026-04", "amount": 9876.00}
+      ],
+      "avg_3month": 10048.67,
+      "anomaly": true,
+      "anomaly_reason": "较近3月均值高出26%，本月有一笔大额消费（机票 3680元）",
+      "note": "账单日每月5号，还款日每月25号→下月5号"
+    },
+    {
+      "bill_id": "BILL008",
+      "type": "broadband",
+      "type_label": "宽带费",
+      "provider": "北京联通",
+      "account_id": "BJ010****5678",
+      "account_label": "宽带账号 010****5678",
+      "billing_cycle": "2026年5月",
+      "amount": 0,
+      "due_date": null,
+      "status": "paid",
+      "status_label": "已缴（年费套餐内）",
+      "auto_pay": true,
+      "auto_pay_method": "年费已预缴至 2026-12-31",
+      "history": [],
+      "avg_3month": 0,
+      "anomaly": false,
+      "anomaly_reason": null,
+      "note": "2026年度套餐已预付，无需月度缴费"
+    }
+  ],
+  "summary": {
+    "total_due_this_month": 15864.90,
+    "total_paid_this_month": 0,
+    "total_overdue": 0,
+    "next_due": {
+      "bill_name": "手机话费",
+      "due_date": "2026-05-28",
+      "amount": 128.00
+    }
+  },
+  "type_enum": ["electricity", "water", "gas", "mobile", "broadband", "property_fee", "parking", "credit_card", "heating"],
+  "status_enum": {
+    "overdue": "已逾期",
+    "due_today": "今日到期",
+    "due_soon": "3天内到期",
+    "upcoming": "未到期",
+    "paid": "已缴纳"
+  }
+}

@@ -1,0 +1,257 @@
+{
+  "api_endpoint": "GET /api/subscriptions?user_id=demo_user",
+  "description": "订阅管理聚合接口 Mock 数据，模拟用户多平台付费订阅信息",
+  "query_time": "2026-05-28T09:00:00+08:00",
+  "subscriptions": [
+    {
+      "sub_id": "SUB001",
+      "service_name": "爱奇艺",
+      "plan_name": "黄金VIP月卡",
+      "category": "video",
+      "category_label": "视频",
+      "price": 25.00,
+      "billing_cycle": "monthly",
+      "billing_cycle_label": "月付",
+      "start_date": "2025-03-15",
+      "expiry_date": "2026-06-15",
+      "auto_renew": true,
+      "auto_renew_method": "微信支付",
+      "status": "active",
+      "status_label": "使用中",
+      "usage_last_30d": {
+        "days_used": 18,
+        "total_hours": 32.5
+      },
+      "cost_per_use": "¥0.77/小时"
+    },
+    {
+      "sub_id": "SUB002",
+      "service_name": "Spotify",
+      "plan_name": "Premium Individual",
+      "category": "music",
+      "category_label": "音乐",
+      "price": 10.99,
+      "price_currency": "USD",
+      "price_cny": 79.00,
+      "billing_cycle": "monthly",
+      "billing_cycle_label": "月付",
+      "start_date": "2024-08-01",
+      "expiry_date": "2026-06-01",
+      "auto_renew": true,
+      "auto_renew_method": "Visa **** 4321",
+      "status": "expiring_soon",
+      "status_label": "即将续费",
+      "usage_last_30d": {
+        "days_used": 25,
+        "total_hours": 48.0
+      },
+      "cost_per_use": "¥1.65/小时"
+    },
+    {
+      "sub_id": "SUB003",
+      "service_name": "iCloud+",
+      "plan_name": "200GB",
+      "category": "tool",
+      "category_label": "工具/存储",
+      "price": 21.00,
+      "billing_cycle": "monthly",
+      "billing_cycle_label": "月付",
+      "start_date": "2023-01-10",
+      "expiry_date": "2026-06-10",
+      "auto_renew": true,
+      "auto_renew_method": "Apple ID（支付宝）",
+      "status": "active",
+      "status_label": "使用中",
+      "usage_last_30d": {
+        "storage_used": "156.8GB",
+        "storage_total": "200GB",
+        "usage_percent": 78.4
+      },
+      "cost_per_use": "持续使用中"
+    },
+    {
+      "sub_id": "SUB004",
+      "service_name": "ChatGPT",
+      "plan_name": "Plus",
+      "category": "tool",
+      "category_label": "工具/AI",
+      "price": 20.00,
+      "price_currency": "USD",
+      "price_cny": 144.00,
+      "billing_cycle": "monthly",
+      "billing_cycle_label": "月付",
+      "start_date": "2024-11-20",
+      "expiry_date": "2026-06-20",
+      "auto_renew": true,
+      "auto_renew_method": "Visa **** 4321",
+      "status": "active",
+      "status_label": "使用中",
+      "usage_last_30d": {
+        "days_used": 28,
+        "conversations": 156
+      },
+      "cost_per_use": "¥0.92/次对话"
+    },
+    {
+      "sub_id": "SUB005",
+      "service_name": "美团外卖",
+      "plan_name": "神会员（连续包月）",
+      "category": "lifestyle",
+      "category_label": "生活服务",
+      "price": 15.00,
+      "billing_cycle": "monthly",
+      "billing_cycle_label": "月付",
+      "start_date": "2025-06-01",
+      "expiry_date": "2026-05-31",
+      "auto_renew": true,
+      "auto_renew_method": "微信支付",
+      "status": "expiring_soon",
+      "status_label": "3天内续费",
+      "usage_last_30d": {
+        "orders": 12,
+        "total_saved": 86.40
+      },
+      "cost_per_use": "月省 ¥71.40（扣除会员费后净省）",
+      "note": "本月红包使用12次，累计节省86.40元"
+    },
+    {
+      "sub_id": "SUB006",
+      "service_name": "Keep",
+      "plan_name": "会员月卡",
+      "category": "fitness",
+      "category_label": "运动健身",
+      "price": 19.00,
+      "billing_cycle": "monthly",
+      "billing_cycle_label": "月付",
+      "start_date": "2025-09-01",
+      "expiry_date": "2026-05-30",
+      "auto_renew": true,
+      "auto_renew_method": "支付宝",
+      "status": "expiring_soon",
+      "status_label": "2天后续费",
+      "usage_last_30d": {
+        "days_used": 2,
+        "total_minutes": 45
+      },
+      "cost_per_use": "¥9.50/次",
+      "zombie_flag": true,
+      "zombie_reason": "过去30天仅使用2次，月均使用不足1小时"
+    },
+    {
+      "sub_id": "SUB007",
+      "service_name": "WPS",
+      "plan_name": "超级会员年卡",
+      "category": "tool",
+      "category_label": "工具/办公",
+      "price": 178.00,
+      "billing_cycle": "yearly",
+      "billing_cycle_label": "年付",
+      "price_monthly_equiv": 14.83,
+      "start_date": "2025-08-20",
+      "expiry_date": "2026-08-20",
+      "auto_renew": false,
+      "auto_renew_method": null,
+      "status": "active",
+      "status_label": "使用中",
+      "usage_last_30d": {
+        "days_used": 20,
+        "documents_edited": 35
+      },
+      "cost_per_use": "¥0.42/次编辑"
+    },
+    {
+      "sub_id": "SUB008",
+      "service_name": "腾讯视频",
+      "plan_name": "VIP月卡",
+      "category": "video",
+      "category_label": "视频",
+      "price": 30.00,
+      "billing_cycle": "monthly",
+      "billing_cycle_label": "月付",
+      "start_date": "2025-12-01",
+      "expiry_date": "2026-05-01",
+      "auto_renew": false,
+      "auto_renew_method": null,
+      "status": "expired",
+      "status_label": "已过期",
+      "expired_date": "2026-05-01",
+      "usage_last_30d": {
+        "days_used": 0,
+        "total_hours": 0
+      },
+      "note": "已过期27天，期间未续费"
+    },
+    {
+      "sub_id": "SUB009",
+      "service_name": "Notion",
+      "plan_name": "Plus（个人）",
+      "category": "tool",
+      "category_label": "工具/笔记",
+      "price": 10.00,
+      "price_currency": "USD",
+      "price_cny": 72.00,
+      "billing_cycle": "monthly",
+      "billing_cycle_label": "月付",
+      "start_date": "2025-04-15",
+      "expiry_date": "2026-06-15",
+      "auto_renew": true,
+      "auto_renew_method": "Visa **** 4321",
+      "status": "active",
+      "status_label": "使用中",
+      "usage_last_30d": {
+        "days_used": 5,
+        "pages_edited": 8
+      },
+      "cost_per_use": "¥9.00/次编辑",
+      "zombie_flag": true,
+      "zombie_reason": "过去30天仅使用5天，使用频率较低且月费较高"
+    },
+    {
+      "sub_id": "SUB010",
+      "service_name": "京东Plus",
+      "plan_name": "年卡会员",
+      "category": "lifestyle",
+      "category_label": "电商会员",
+      "price": 148.00,
+      "billing_cycle": "yearly",
+      "billing_cycle_label": "年付",
+      "price_monthly_equiv": 12.33,
+      "start_date": "2026-01-01",
+      "expiry_date": "2026-12-31",
+      "auto_renew": true,
+      "auto_renew_method": "京东支付",
+      "status": "active",
+      "status_label": "使用中",
+      "usage_last_30d": {
+        "orders": 4,
+        "shipping_saved": 40.00,
+        "coupons_used": 3
+      },
+      "cost_per_use": "月省 ¥27.67（运费+优惠券，扣除月均会员费后净省）"
+    }
+  ],
+  "summary": {
+    "total_active": 8,
+    "total_expired": 1,
+    "total_expiring_soon": 3,
+    "monthly_cost_cny": 419.83,
+    "yearly_cost_cny": 5038.00,
+    "zombie_subscriptions": 2,
+    "zombie_monthly_waste": 91.00,
+    "categories": {
+      "video": {"count": 1, "monthly": 25.00},
+      "music": {"count": 1, "monthly": 79.00},
+      "tool": {"count": 4, "monthly": 250.83},
+      "lifestyle": {"count": 2, "monthly": 27.33},
+      "fitness": {"count": 1, "monthly": 19.00}
+    }
+  },
+  "category_enum": ["video", "music", "tool", "lifestyle", "fitness", "gaming", "news", "education"],
+  "status_enum": {
+    "active": "正常使用中",
+    "expiring_soon": "7天内到期/续费",
+    "expired": "已过期",
+    "cancelled": "已取消",
+    "trial": "试用中"
+  }
+}

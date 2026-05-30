@@ -1,0 +1,177 @@
+{
+  "api_endpoint": "GET /api/packages?user_id=demo_user",
+  "description": "快递聚合接口 Mock 数据，模拟多平台包裹状态查询返回结果",
+  "response_time": "2026-05-28T10:00:00+08:00",
+  "packages": [
+    {
+      "id": "PKG001",
+      "platform": "淘宝",
+      "item_name": "Sony WH-1000XM5 降噪耳机",
+      "item_image": "https://mock-cdn.example.com/img/sony-xm5.jpg",
+      "tracking_no": "SF1398276543210",
+      "carrier": "顺丰速运",
+      "status": "delivering",
+      "status_label": "派送中",
+      "current_location": "北京市朝阳区望京营业点，快递员张师傅正在派送",
+      "estimated_arrival": "2026-05-28T14:00:00+08:00",
+      "station_name": null,
+      "station_deadline": null,
+      "order_time": "2026-05-25T22:13:00+08:00",
+      "ship_time": "2026-05-26T09:30:00+08:00",
+      "timeline": [
+        {"time": "2026-05-26 09:30", "desc": "卖家已发货，顺丰揽收"},
+        {"time": "2026-05-26 18:00", "desc": "到达深圳转运中心"},
+        {"time": "2026-05-27 06:00", "desc": "到达北京转运中心"},
+        {"time": "2026-05-28 08:30", "desc": "到达望京营业点"},
+        {"time": "2026-05-28 09:15", "desc": "快递员张师傅正在派送中"}
+      ]
+    },
+    {
+      "id": "PKG002",
+      "platform": "京东",
+      "item_name": "飞利浦电动牙刷替换刷头 4支装",
+      "item_image": "https://mock-cdn.example.com/img/philips-brush.jpg",
+      "tracking_no": "JD0098765432100",
+      "carrier": "京东物流",
+      "status": "station_arrived",
+      "status_label": "已到驿站",
+      "current_location": "丰巢智能柜 望京SOHO北门",
+      "estimated_arrival": null,
+      "station_name": "丰巢智能柜 望京SOHO北门",
+      "station_deadline": "2026-05-28T18:00:00+08:00",
+      "pickup_code": "5-2-8731",
+      "order_time": "2026-05-24T09:30:00+08:00",
+      "ship_time": "2026-05-24T14:00:00+08:00",
+      "timeline": [
+        {"time": "2026-05-24 14:00", "desc": "京东物流已揽收"},
+        {"time": "2026-05-24 22:00", "desc": "到达北京分拣中心"},
+        {"time": "2026-05-25 10:00", "desc": "到达望京配送站"},
+        {"time": "2026-05-25 14:30", "desc": "已投递至丰巢智能柜（望京SOHO北门）"},
+        {"time": "2026-05-25 14:30", "desc": "取件码：5-2-8731"}
+      ]
+    },
+    {
+      "id": "PKG003",
+      "platform": "抖音商城",
+      "item_name": "手冲咖啡豆 耶加雪菲 水洗 250g",
+      "item_image": "https://mock-cdn.example.com/img/coffee-bean.jpg",
+      "tracking_no": "YT7024052600001",
+      "carrier": "圆通速递",
+      "status": "in_transit",
+      "status_label": "运输中",
+      "current_location": "郑州转运中心",
+      "estimated_arrival": "2026-05-30T12:00:00+08:00",
+      "station_name": null,
+      "station_deadline": null,
+      "order_time": "2026-05-26T15:44:00+08:00",
+      "ship_time": "2026-05-27T08:00:00+08:00",
+      "timeline": [
+        {"time": "2026-05-27 08:00", "desc": "卖家已发货，圆通揽收（云南昆明）"},
+        {"time": "2026-05-27 20:00", "desc": "到达昆明转运中心"},
+        {"time": "2026-05-28 06:00", "desc": "到达郑州转运中心"}
+      ]
+    },
+    {
+      "id": "PKG004",
+      "platform": "美团闪购",
+      "item_name": "维达抽纸 棉韧系列 3层120抽 24包整箱",
+      "item_image": "https://mock-cdn.example.com/img/vinda-tissue.jpg",
+      "tracking_no": "MT20260528001",
+      "carrier": "美团配送",
+      "status": "delivering",
+      "status_label": "配送中",
+      "current_location": "骑手李师傅已取货，距您约1.2km",
+      "estimated_arrival": "2026-05-28T10:35:00+08:00",
+      "station_name": null,
+      "station_deadline": null,
+      "order_time": "2026-05-28T10:01:00+08:00",
+      "ship_time": "2026-05-28T10:08:00+08:00",
+      "timeline": [
+        {"time": "2026-05-28 10:01", "desc": "订单已下单"},
+        {"time": "2026-05-28 10:05", "desc": "商家已接单"},
+        {"time": "2026-05-28 10:08", "desc": "骑手李师傅已取货"},
+        {"time": "2026-05-28 10:08", "desc": "预计10:35送达"}
+      ]
+    },
+    {
+      "id": "PKG005",
+      "platform": "拼多多",
+      "item_name": "pidan混合猫砂 原味 2.4kg*4袋",
+      "item_image": "https://mock-cdn.example.com/img/pidan-cat-litter.jpg",
+      "tracking_no": "ZTO20260523888",
+      "carrier": "中通快递",
+      "status": "station_arrived",
+      "status_label": "已到驿站",
+      "current_location": "菜鸟驿站 望京西园三区底商",
+      "estimated_arrival": null,
+      "station_name": "菜鸟驿站 望京西园三区底商",
+      "station_deadline": "2026-05-28T20:00:00+08:00",
+      "pickup_code": null,
+      "order_time": "2026-05-22T11:20:00+08:00",
+      "ship_time": "2026-05-23T10:00:00+08:00",
+      "timeline": [
+        {"time": "2026-05-23 10:00", "desc": "卖家已发货，中通揽收（江苏苏州）"},
+        {"time": "2026-05-23 22:00", "desc": "到达苏州转运中心"},
+        {"time": "2026-05-24 14:00", "desc": "到达北京转运中心"},
+        {"time": "2026-05-25 08:00", "desc": "到达望京配送网点"},
+        {"time": "2026-05-25 11:30", "desc": "已投递至菜鸟驿站（望京西园三区底商）"},
+        {"time": "2026-05-25 11:30", "desc": "请凭取件通知短信到店取件"}
+      ]
+    },
+    {
+      "id": "PKG006",
+      "platform": "小红书",
+      "item_name": "OLLY 褪黑素软糖 助眠 50粒",
+      "item_image": "https://mock-cdn.example.com/img/olly-melatonin.jpg",
+      "tracking_no": "EMS1234567890CN",
+      "carrier": "EMS",
+      "status": "in_transit",
+      "status_label": "运输中（跨境）",
+      "current_location": "海关清关中（广州白云机场）",
+      "estimated_arrival": "2026-06-01T18:00:00+08:00",
+      "station_name": null,
+      "station_deadline": null,
+      "order_time": "2026-05-20T20:00:00+08:00",
+      "ship_time": "2026-05-22T10:00:00+08:00",
+      "timeline": [
+        {"time": "2026-05-22 10:00", "desc": "海外仓已发货"},
+        {"time": "2026-05-25 14:00", "desc": "到达广州白云机场"},
+        {"time": "2026-05-26 09:00", "desc": "海关申报中"},
+        {"time": "2026-05-28 08:00", "desc": "海关清关中，预计1-3个工作日放行"}
+      ]
+    },
+    {
+      "id": "PKG007",
+      "platform": "1688",
+      "item_name": "办公室零食大礼包 20袋混装",
+      "item_image": "https://mock-cdn.example.com/img/snack-box.jpg",
+      "tracking_no": "YD9876543210",
+      "carrier": "韵达快递",
+      "status": "signed",
+      "status_label": "已签收",
+      "current_location": "本人签收",
+      "estimated_arrival": null,
+      "station_name": null,
+      "station_deadline": null,
+      "order_time": "2026-05-20T16:00:00+08:00",
+      "ship_time": "2026-05-21T09:00:00+08:00",
+      "signed_time": "2026-05-27T17:30:00+08:00",
+      "timeline": [
+        {"time": "2026-05-21 09:00", "desc": "卖家已发货，韵达揽收（浙江义乌）"},
+        {"time": "2026-05-22 20:00", "desc": "到达北京转运中心"},
+        {"time": "2026-05-27 10:00", "desc": "到达望京配送网点"},
+        {"time": "2026-05-27 15:00", "desc": "派送中"},
+        {"time": "2026-05-27 17:30", "desc": "已签收，本人签收"}
+      ]
+    }
+  ],
+  "status_enum": {
+    "shipped": "已发货，等待揽收",
+    "in_transit": "运输中",
+    "delivering": "派送中",
+    "station_arrived": "已到驿站/快递柜",
+    "signed": "已签收",
+    "exception": "异常（退回/丢失/拒收）"
+  },
+  "platform_enum": ["淘宝", "京东", "抖音商城", "美团闪购", "拼多多", "小红书", "1688", "得物", "唯品会"]
+}
